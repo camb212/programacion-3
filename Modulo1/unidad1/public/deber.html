@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pedido de Uniformes - Doctor Clear</title>
+    </head>
+    <body>
+        <header style="text-align: center; margin-top: 20px;">
+            <img src="unii.jpg" alt="Logo Doctor Clear" width="50">
+        </header>
+
+        <h1 style="text-align: center; margin-top: 20px;">Formulario de Pedido de Uniformes - Doctor Clear</h1>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <img src="uni1.avif" alt="Uniforme 1" width="200" height="200" style="margin: 10px;">
+            <img src="uni2.jpg" alt="Uniforme 2" width="200" height="200" style="margin: 10px;">
+            <img src="uni3.jpg" alt="Uniforme 3" width="200" height="200" style="margin: 10px;">
+        </div>
+
+        <form action="unii.jpg" method="POST" style="margin: 30px auto; width: 80%; max-width: 800px;">
+            <table style="width: 100%; border-spacing: 25px;">
+                <tr>
+                    <td style="width: 50%; padding: 10px;">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px;">
+                    </td>
+                    <td style="width: 50%; padding: 10px;">
+                        <label for="Pais">País</label>
+                        <select id="Pais" name="Pais" style="width: 100%; padding: 10px;">
+                            <option value="Ec">Ecuador</option>
+                            <option value="Pe">Perú</option>
+                            <option value="Co">Colombia</option>
+                            <option value="Es">España</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required style="width: 100%; padding: 10px;">
+                    </td>
+                    <td style="padding: 10px;">
+                        <label for="Provincia">Provincia</label>
+                        <select id="Provincia" name="Provincia" style="width: 100%; padding: 10px;">
+                            <option value="Ec">Pichincha</option>
+                            <option value="Pe">Guayas</option>
+                            <option value="Co">Cuenca</option>
+                            <option value="Es">Rios</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">
+                        <label for="Direccion">Dirección</label>
+                        <textarea id="Direccion" name="Direccion" rows="5" required style="width: 100%; padding: 10px;">Ejemplo: Av. Occidental UTE</textarea>
+                    </td>
+                    <td style="padding: 10px;">
+                        <label for="Color">Color del Uniforme</label>
+                        <select id="Color" name="Color" multiple style="width: 100%; padding: 10px;">
+                            <option value="4">Azul</option>
+                            <option value="3">Verde</option>
+                            <option value="2">Marrón</option>
+                            <option value="1">Blanco</option>
+                            <option value="5">Rojo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">
+                        <label for="talla">Tamaño del Uniforme</label>
+                        <select id="talla" name="talla" style="width: 100%; padding: 10px;">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" name="cantidad" required min="1" max="100" style="width: 100%; padding: 10px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">
+                        <label for="genero">Género</label><br>
+                        <input type="radio" id="Femenino" name="genero" value="femenino"> Femenino
+                        <input type="radio" id="Masculino" name="genero" value="masculino"> Masculino
+                    </td>
+                    <td>
+                        <label for="interes">Interes en comprar</label>
+                        <input type="range" id="a" name="a">
+                    </td>
+                </tr>
+            </table>
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; font-size: 16px;">Enviar Pedido</button>
+            </div>
+        </form>
+    </body>
+</html>
