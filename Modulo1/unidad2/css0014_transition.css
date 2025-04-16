@@ -1,0 +1,17 @@
+.item {
+    transform: translate(0);
+        padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 
+        transform 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+}
+
+.item:hover {
+    background-color: #d1e7ff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

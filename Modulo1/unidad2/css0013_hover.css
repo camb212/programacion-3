@@ -1,0 +1,20 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.item:hover {
+    background-color: #d1e7ff;
+    transform: scale(1.05);
+}

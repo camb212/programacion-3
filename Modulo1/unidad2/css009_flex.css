@@ -1,0 +1,22 @@
+.contenedor {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 20px; 
+}
+
+.item {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; /* Valor agregado */
+    flex: 1; 
+    text-align: center; 
+}
+
+.especial {
+    align-self: self-start;
+    background: red;
+}
