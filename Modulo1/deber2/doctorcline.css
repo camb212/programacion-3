@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4c90af;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header-content h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.productos {
+    padding: 20px;
+    text-align: center;
+}
+
+.productos h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.productos ul {
+    list-style-type: none;
+}
+
+.productos li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.imagenes {
+    padding: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.item {
+    width: 100%;
+    max-width: 250px;
+}
+
+.banner-image {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.banner-image img {
+    width: 50%;
+    height: auto;
+}
+
+.producto-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.producto-img:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #4c90af;
+}
+
+th {
+    background-color: #4c90af;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td:hover {
+    background-color: #eaeaea;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.footer a {
+    color: #f0f8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.fondo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: "uni6.jpg";
+    color: black;
+    padding: 40px;
+}
+.item {
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease; /* Animación de transición */
+}
+
+.item:hover {
+    transform: translateY(-10px); /* Mueve la imagen hacia arriba al pasar el ratón */
+}
